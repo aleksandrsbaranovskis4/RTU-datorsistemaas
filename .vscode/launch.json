@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "score",
+            "request": "launch",
+            "mainClass": "score",
+            "projectName": "RTU-datorsistemas_6049b86c"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

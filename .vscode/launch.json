@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "examtest",
+            "request": "launch",
+            "mainClass": "examtest",
+            "projectName": "RTU-datorsistemas_4edfa2a7"
+        },
+        {
+            "type": "java",
             "name": "score",
             "request": "launch",
             "mainClass": "score",

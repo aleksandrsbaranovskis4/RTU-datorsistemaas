@@ -5,7 +5,7 @@ public class score {
         double bonussPunktiParMenti = 0;
         double bonussPunktiParPapilduzdevumiem = 1;
         double bonussPunktiParAlgPraksi = 0;
-        double atzimeParEksamenu = 0;
+        double atzimeParEksamenu = 7;
 
         atzimeParEksamenu = atzimeParEksamenu >= 4 ? atzimeParEksamenu : 0;
 

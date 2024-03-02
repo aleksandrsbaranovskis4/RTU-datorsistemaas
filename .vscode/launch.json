@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "uzd_2_3",
+            "request": "launch",
+            "mainClass": "uzd_2_3",
+            "projectName": "RTU-datorsistemas_6049b86c"
+        },
+        {
+            "type": "java",
             "name": "score",
             "request": "launch",
             "mainClass": "score",

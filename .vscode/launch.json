@@ -6,10 +6,17 @@
     "configurations": [
         {
             "type": "java",
+<<<<<<< HEAD
             "name": "uzd_2_3",
             "request": "launch",
             "mainClass": "uzd_2_3",
             "projectName": "RTU-datorsistemas_6049b86c"
+=======
+            "name": "examtest",
+            "request": "launch",
+            "mainClass": "examtest",
+            "projectName": "RTU-datorsistemas_4edfa2a7"
+>>>>>>> 87adbf5cf1976e21c6bf1c7d25f9b375963cd71e
         },
         {
             "type": "java",

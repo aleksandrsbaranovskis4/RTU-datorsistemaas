@@ -55,20 +55,30 @@ class MaxHeap:
 
         return max_value
 
+def terminal_input():
+    nums = []
+    list = input("Enter list of numbers: ")
+    for num in list:
+        nums.append(int(num))
+    k = int(input("Which smallest number: "))
+    print(find_kth_smallest(nums, k))
+    
 
 def find_kth_smallest(nums, k):
-    for num_list in nums:
-        for num in num_list:
-            MaxHeap.insert(num)
-            if len(MaxHeap.heap) > k:
-                MaxHeap.remove()
-    return MaxHeap.remove()
+    tree = MaxHeap()
+    for num in nums:
+        tree.insert(num)
+        if len(tree.heap) > k:
+            tree.remove()
+    return tree.remove()
+
+terminal_input()
 
 # Test cases
+"""
 nums = [[3,2,1,5,6,4], [6,5,4,3,2,1], [1,2,3,4,5,6], [3,2,3,1,2,4,5,5,6]]
-ks = [2, 3, 4, 7]
-expected_outputs = [2, 3, 4, 5]
-
+ks = [2, 3, 4, 7, 4]
+expected_outputs = [2, 3, 4, 5, 4]
 for i in range(len(nums)):
     print(f'Test case {i+1}...')
     print(f'Input: {nums[i]} with k = {ks[i]}')
@@ -77,7 +87,7 @@ for i in range(len(nums)):
     print(f'Expected output: {expected_outputs[i]}')
     print(f'Test passed: {result == expected_outputs[i]}')
     print('---------------------------------------')
-
+"""
 
 """
     EXPECTED OUTPUT:
